@@ -1,0 +1,34 @@
+version: '3.4'
+
+services:
+  load_balancer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - server1
+      - server2
+      - server3
+
+  server1:
+    build:
+      context: ./server1
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5000"
+
+  server2:
+    build:
+      context: ./server2
+      dockerfile: Dockerfile
+    ports:
+      - "5002:5000"
+
+  server3:
+    build:
+      context: ./server3
+      dockerfile: Dockerfile
+    ports:
+      - "5003:5000"
