@@ -2,7 +2,7 @@
 FROM python:3.12.3
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /
 
 # Copy the dependencies file to the working directory
 COPY requirements.txt .
@@ -14,4 +14,4 @@ RUN pip3 install -r requirements.txt
 COPY . .
 
 # Command to run the Flask application
-CMD ["python3", "app.py"]
+CMD ["python3", "app3.py"]
