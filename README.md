@@ -10,16 +10,17 @@ A load balancer is used to route the requests coming from several clients asynch
 
 1. You are running Linux Ubuntu version 20.04 or above on a host/virtual machine.
 
-2. You have installed python3 and pip3 libraries. Use the following commands to install:
+2. You have installed python3, pip, and pytest libraries. Use the following commands to install:
 
    ```
    $ sudo apt-get update
    $ sudo apt-get install python3 python3-pip python3-pytest -y
    $ python3 --version
-   $ pip3 --version
+   $ pip --version
+   $ pytest --version
    ```
    
-3. You have installed docker packages. Use the following commands to install:
+3. You have installed docker & docker-compose packages. Use the following commands to install:
   
    ```
    $ sudo apt-get install docker -y
@@ -63,28 +64,9 @@ A load balancer is used to route the requests coming from several clients asynch
   $ cd Desktop/DS-Load-Balancer
   ```
 
-3. Run the following commands:
-
-  ```
-  $ docker build -t server .
-  $ docker images
-  $ docker tag server:latest dsloadbal.azurecr.io/lb:v1
-  $ docker images
-  $ docker login dsloadbal.azurecr.io
-  Username: dsloadbal
-  Password: pass
-  $ docker push dsloadbal.azurecr.io/lb:v1
-  $ docker run server:latest
-  $ docker compose up -d 
-  ```
-
 # Testing and Performance
 
   ```
   $ python3 -m test
-  $ curl localhost:5001
-  $ curl localhost:5002
-  $ curl localhost:5003
-  $ docker compose down
   $ make test
   ```
