@@ -4,7 +4,7 @@
 
 # Design
 
-A load balancer routes the requests coming from several clients asynchronously among several servers so that the load is nearly evenly distributed among them. To scale a particular service with increasing clients, load balancers are used to manage multiple replicas of the service to improve resource utilization and throughput. A load balancer uses a consistent hashing data structure to distribute the requests coming from the clients efficiently. There should always be servers present to handle the requests. In the event of failure, the load balancer will spawn new replicas of the server to handle the requests.
+A load balancer is used to route the requests coming from several clients asynchronously among several servers, so that the load is nearly evenly distributed among them. To scale a particular service with increasing clients, it manages multiple replicas of the service to improve resource utilization and throughput. It uses a consistent hashing data structure to distribute the requests coming from the clients efficiently. There should always be servers present to handle the requests. In the event of failure of a server, the load balancer spawns new replicas of the server to handle the requests.
 
 # Assumptions
 
