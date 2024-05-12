@@ -57,7 +57,7 @@ A load balancer is used to route the requests coming from several clients asynch
   $ git clone https://github.com/Dennis-Maigua/DS-Load-Balancer.git
   ```
 
-2. Open the cloned project folder/directory e.g. /Desktop/DS-Load-Balancer.
+2. Navigate to the cloned project folder/directory.
 
   ```
   $ cd Desktop/DS-Load-Balancer
