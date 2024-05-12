@@ -1,6 +1,9 @@
 # Dockerfile for the server
 FROM python:3.12.3
 
+#  Expose the port 5000 of the docker container
+EXPOSE 5000
+
 # Set the working directory in the container
 WORKDIR /
 

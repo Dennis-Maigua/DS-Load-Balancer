@@ -1,8 +1,7 @@
 # Dockerfile for nginx
 FROM nginx
 
-# Remove the default nginx config
+# Override the default nginx configuration file
 RUN rm /etc/nginx/conf.d/default.conf
 
-# Copy the new config file to the nginx directory
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/nginx.conf
