@@ -71,7 +71,7 @@ A load balancer routes the requests coming from several clients asynchronously a
   $ docker tag server:latest dsloadbal.azurecr.io/lb:v1
   $ docker images
   $ docker login dsloadbal.azurecr.io
-  Username: user
+  Username: dsloadbal
   Password: pass
   $ docker push dsloadbal.azurecr.io/lb:v1
   $ docker run server:latest
