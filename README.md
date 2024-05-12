@@ -8,7 +8,7 @@ A load balancer is used to route the requests coming from several clients asynch
 
 # Assumptions
 
-1. You are running Linux Ubuntu v20.04 or above on a virtual machine.
+1. You are running Linux Ubuntu v20.04 or above on a host/virtual machine.
 
 2. You have installed python3 and pip3 libraries. Use the following commands to install:
 
