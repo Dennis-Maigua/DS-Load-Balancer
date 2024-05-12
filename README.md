@@ -81,9 +81,10 @@ A load balancer is used to route the requests coming from several clients asynch
 # Testing and Performance
 
   ```
+  $ python3 -m test
   $ curl localhost:5001
   $ curl localhost:5002
   $ curl localhost:5003
   $ docker compose down
+  $ make test
   ```
-  
