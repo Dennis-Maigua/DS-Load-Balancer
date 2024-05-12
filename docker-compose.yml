@@ -1,35 +1,16 @@
-version: '3.9'
+version: '5.0.3'
 
 services:
-  load_balancer:
-    image: loadbalancer
+  app:
     build:
       context: .
-      dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "5000"
+  nginx:
+    image: nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx.conf:ro
     depends_on:
-      - server1
-      - server2
-      - server3
-
-  server1:
-    image: server
-    environment:
-      - APP=server1
+      - app
     ports:
-      - "5001:5000"
-
-  server2:
-    image: server
-    environment:
-      - APP=server2
-    ports:
-      - "5002:5000"
-
-  server3:
-    image: server
-    environment:
-      - APP=server3
-    ports:
-      - "5003:5000"
+      - "80:80"
