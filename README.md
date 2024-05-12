@@ -8,9 +8,9 @@ A load balancer is used to route the requests coming from several clients asynch
 
 # Assumptions
 
-1. You are running Linux Ubuntu version 20.04 or above on a host/virtual machine.
+1. You are running Linux Ubuntu version 20.04 or above on a host or virtual machine.
 
-2. You have installed python3, pip, and pytest libraries. Use the following commands to install:
+2. You have installed python3, pip, and pytest libraries using the following commands:
 
    ```
    $ sudo apt-get update
@@ -20,7 +20,7 @@ A load balancer is used to route the requests coming from several clients asynch
    $ pytest --version
    ```
    
-3. You have installed docker & docker-compose packages. Use the following commands to install:
+3. You have installed docker & docker-compose packages using the following commands:
   
    ```
    $ sudo apt-get install docker -y
@@ -50,21 +50,21 @@ A load balancer is used to route the requests coming from several clients asynch
    $ git config --list
    ```
 
-# Installation
+# Testing and Performance
 
-1. Open a new terminal on Linux Ubuntu and clone the Github repository.
+1. Open a new terminal on Linux Ubuntu and clone the Github repository:
 
   ```
   $ git clone https://github.com/Dennis-Maigua/DS-Load-Balancer.git
   ```
 
-2. Navigate to the cloned project folder/directory.
+2. Navigate to the cloned project folder or directory:
 
   ```
   $ cd Desktop/DS-Load-Balancer
   ```
 
-# Testing and Performance
+3. Run the following commands on the terminal:
 
   ```
   $ python3 -m test
