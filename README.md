@@ -39,7 +39,7 @@ A load balancer is used to route the requests coming from several clients asynch
    $ sudo apt-get update
    ```
    
-4. You have installed git. Use the following commands to install:
+4. You have installed git using the following commands:
   
    ```
    $ sudo apt install git
