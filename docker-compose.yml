@@ -1,7 +1,8 @@
-version: '3.4'
+version: '3.9'
 
 services:
   load_balancer:
+    image: loadbalancer
     build:
       context: .
       dockerfile: Dockerfile
@@ -13,22 +14,22 @@ services:
       - server3
 
   server1:
-    build:
-      context: ./server1
-      dockerfile: Dockerfile
+    image: server
+    environment:
+      - APP=server1
     ports:
       - "5001:5000"
 
   server2:
-    build:
-      context: ./server2
-      dockerfile: Dockerfile
+    image: server
+    environment:
+      - APP=server2
     ports:
       - "5002:5000"
 
   server3:
-    build:
-      context: ./server3
-      dockerfile: Dockerfile
+    image: server
+    environment:
+      - APP=server3
     ports:
       - "5003:5000"

@@ -1,14 +1,16 @@
 # Dockerfile for the server
-FROM python:3.12-slim
+FROM python:3.12.3
 
 # Set the working directory in the container
-WORKDIR /app
+RUN mkdir /app
+WORKDIR /app/
+ADD . /app/
 
 # Copy the dependencies file to the working directory
 COPY requirements.txt .
 
 # Install dependencies
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 # Copy the rest of the application code to the working directory
 COPY . .
@@ -17,4 +19,4 @@ COPY . .
 EXPOSE 5000
 
 # Command to run the Flask application
-CMD ["python", "app.py"]
+CMD ["python3", "/app/app.py"]
