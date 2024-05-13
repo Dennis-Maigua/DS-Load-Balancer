@@ -12,7 +12,7 @@ services:
     ports:
       - "5003:5000"
   nginx:
-    build: n./ginx
+    build: ./nginx
     ports:
       - "8080:80"
     depends_on:
