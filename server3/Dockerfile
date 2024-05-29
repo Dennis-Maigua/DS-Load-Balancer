@@ -17,4 +17,4 @@ RUN pip3 install -r requirements.txt
 COPY . .
 
 # Command to run the Flask application
-CMD ["python3", "app2.py"]
+CMD ["python3", "server3.py"]
