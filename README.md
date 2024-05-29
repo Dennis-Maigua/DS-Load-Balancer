@@ -12,7 +12,7 @@ A load balancer is used to route the requests coming from several clients asynch
 
 2. You have installed python3, pip, and pytest libraries using the following commands:
 
-   ```
+   ```bash
    $ sudo apt-get update
    $ sudo apt-get install python3 python3-pip python3-pytest -y
    $ python3 --version
