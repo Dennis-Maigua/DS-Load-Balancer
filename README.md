@@ -22,7 +22,7 @@ A load balancer is used to route the requests coming from several clients asynch
    
 3. You have installed docker & docker-compose packages using the following commands:
   
-   ```
+   ```bash
    $ sudo apt-get install docker -y
    $ sudo apt-get install ca-certificates curl
    $ sudo install -m 0755 -d /etc/apt/keyrings
@@ -41,7 +41,7 @@ A load balancer is used to route the requests coming from several clients asynch
    
 4. You have installed git using the following commands:
   
-   ```
+   ```bash
    $ sudo apt install git
    $ git --version
    $ sudo apt update
