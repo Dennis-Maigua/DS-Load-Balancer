@@ -1,4 +1,8 @@
-# Implementing a Load Balancer Within a Docker Network
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This project is licensed under the MIT license.
+
+# Load Balancer With Nginx and Docker
 
 ![Load Balancer](https://github.com/Dennis-Maigua/DS-Load-Balancer/assets/32156551/39a184e9-217b-4c3c-93f9-52b5281dcd28)
 
