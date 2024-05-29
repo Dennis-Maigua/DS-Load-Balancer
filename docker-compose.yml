@@ -18,7 +18,7 @@ services:
     container_name: nginx
     build: ./nginx
     ports:
-      - "8080:80"
+      - "8000:8000"
     depends_on:
       - app1
       - app2
