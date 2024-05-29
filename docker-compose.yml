@@ -16,6 +16,8 @@ services:
       - "5003:5000"
   nginx:
     container_name: nginx
+    volumes:
+      - "./nginx.conf:/etc/nginx/conf.d"
     build: ./nginx
     ports:
       - "8000:8000"
