@@ -49,8 +49,8 @@ A load balancer is used to route the requests coming from several clients asynch
    $ sudo apt install git
    $ git --version
    $ sudo apt update
-   $ git config --global user.name "Your Name"
-   $ git config --global user.email "youremail@domain.com"
+   $ git config --global user.name "your-github-username"
+   $ git config --global user.email "your-github-email@domain.com"
    $ git config --list
    ```
 
