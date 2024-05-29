@@ -12,7 +12,7 @@ A load balancer is used to route the requests coming from several clients asynch
 
 2. You have installed python3, pip, and pytest libraries using the following commands:
 
-   ```
+   ```bash
    $ sudo apt-get update
    $ sudo apt-get install python3 python3-pip python3-pytest -y
    $ python3 --version
@@ -22,7 +22,7 @@ A load balancer is used to route the requests coming from several clients asynch
    
 3. You have installed docker & docker-compose packages using the following commands:
   
-   ```
+   ```bash
    $ sudo apt-get install docker -y
    $ sudo apt-get install ca-certificates curl
    $ sudo install -m 0755 -d /etc/apt/keyrings
@@ -41,7 +41,7 @@ A load balancer is used to route the requests coming from several clients asynch
    
 4. You have installed git using the following commands:
   
-   ```
+   ```bash
    $ sudo apt install git
    $ git --version
    $ sudo apt update
@@ -54,19 +54,19 @@ A load balancer is used to route the requests coming from several clients asynch
 
 1. Open a new terminal on Linux Ubuntu and clone the Github repository:
 
-  ```
+  ```bash
   $ git clone https://github.com/Dennis-Maigua/DS-Load-Balancer.git
   ```
 
 2. Navigate to the cloned project folder or directory:
 
-  ```
+  ```bash
   $ cd Desktop/DS-Load-Balancer
   ```
 
 3. Run the following commands on the terminal:
 
-  ```
+  ```bash
   $ python3 -m test
   $ make test
   ```
