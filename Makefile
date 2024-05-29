@@ -4,5 +4,4 @@ test:
 	@curl http://localhost:5001
 	@curl http://localhost:5002
 	@curl http://localhost:5003
-	@curl http://localhost:8080
 	@docker compose down
