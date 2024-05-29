@@ -55,13 +55,13 @@ A load balancer is used to route the requests coming from several clients asynch
 1. Open a new terminal on Linux Ubuntu and clone the Github repository:
 
   ```bash
-  git clone https://github.com/Dennis-Maigua/DS-Load-Balancer.git
+  $ git clone https://github.com/Dennis-Maigua/DS-Load-Balancer.git
   ```
 
 2. Navigate to the cloned project folder or directory:
 
   ```bash
-  cd Desktop/DS-Load-Balancer
+  $ cd Desktop/DS-Load-Balancer
   ```
 
 3. Run the following commands on the terminal:
