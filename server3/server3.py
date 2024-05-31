@@ -1,4 +1,4 @@
-from flask import request, Flask
+from flask import Flask
 
 server3 = Flask(__name__)
 
