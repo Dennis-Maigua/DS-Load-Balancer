@@ -69,6 +69,5 @@ This project implements a customizable load balancer using consistent hashing.
 1. **Build and Run:**
 
   ```bash
-  $ make build
-  $ make up
+  $ make all
   ```
