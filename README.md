@@ -6,18 +6,17 @@ This project is licensed under the MIT license.
 
 ![Load Balancer](https://github.com/Dennis-Maigua/DS-Load-Balancer/assets/32156551/39a184e9-217b-4c3c-93f9-52b5281dcd28)
 
-## Overview
 This project implements a customizable load balancer using consistent hashing.
 
 ## Design
 
-1. **Server:** Simple Flask server with `/home` and `/heartbeat` endpoints.
+1. **Server:** Simple Docker server with `/home` and `/heartbeat` endpoints.
 2. **Consistent Hashing:** Python implementation of consistent hashing.
 3. **Load Balancer:** Flask-based load balancer managing server containers.
 
 ## Setup
 
-1. Install python3, pip, and pytest libraries:
+1. Install `python3`, `pip`, and `pytest` libraries:
 
    ```bash
    $ sudo apt-get update
@@ -27,7 +26,7 @@ This project implements a customizable load balancer using consistent hashing.
    $ pytest --version
    ```
    
-2. Install docker & docker-compose packages:
+2. Install `docker` & `docker-compose` packages:
   
    ```bash
    $ sudo apt-get install docker -y
@@ -46,7 +45,7 @@ This project implements a customizable load balancer using consistent hashing.
    $ sudo apt-get update
    ```
    
-3. Install and configure git:
+3. Install and configure `git`:
   
    ```bash
    $ sudo apt install git
@@ -57,7 +56,7 @@ This project implements a customizable load balancer using consistent hashing.
    $ git config --list
    ```
 
-4. Clone the Github repository and open the project folder/directory:
+4. Clone the repository and open the project folder/directory:
 
   ```bash
   $ git clone https://github.com/Dennis-Maigua/DS-Load-Balancer.git
