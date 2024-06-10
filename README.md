@@ -2,19 +2,22 @@
 
 This project is licensed under the MIT license.
 
-# Load Balancer With Nginx and Docker
+# Customizable Load Balancer
 
 ![Load Balancer](https://github.com/Dennis-Maigua/DS-Load-Balancer/assets/32156551/39a184e9-217b-4c3c-93f9-52b5281dcd28)
 
-# Design
+## Overview
+This project implements a customizable load balancer using consistent hashing.
 
-A load balancer is used to route the requests coming from several clients asynchronously among several servers, so that the load is nearly evenly distributed among them. To scale a particular service with increasing clients, it manages multiple replicas of the service to improve resource utilization and throughput. It uses a consistent hashing data structure to distribute the requests coming from the clients efficiently. There should always be servers present to handle the requests. In the event of failure of a server, the load balancer spawns new replicas of the server to handle the requests.
+## Design
 
-# Assumptions
+1. **Server:** Simple Flask server with `/home` and `/heartbeat` endpoints.
+2. **Consistent Hashing:** Python implementation of consistent hashing.
+3. **Load Balancer:** Flask-based load balancer managing server containers.
 
-1. You are running Linux Ubuntu version 20.04 or above on a host or virtual machine.
+## Setup
 
-2. You have installed python3, pip, and pytest libraries using the following commands:
+1. Install python3, pip, and pytest libraries:
 
    ```bash
    $ sudo apt-get update
@@ -24,7 +27,7 @@ A load balancer is used to route the requests coming from several clients asynch
    $ pytest --version
    ```
    
-3. You have installed docker & docker-compose packages using the following commands:
+2. Install docker & docker-compose packages:
   
    ```bash
    $ sudo apt-get install docker -y
@@ -43,34 +46,29 @@ A load balancer is used to route the requests coming from several clients asynch
    $ sudo apt-get update
    ```
    
-4. You have installed git using the following commands:
+3. Install and configure git:
   
    ```bash
    $ sudo apt install git
    $ git --version
    $ sudo apt update
    $ git config --global user.name "your-github-username"
-   $ git config --global user.email "your-github-email@domain.com"
+   $ git config --global user.email "your-github-email"
    $ git config --list
    ```
 
-# Testing and Performance
-
-1. Open a new terminal on Linux Ubuntu and clone the Github repository:
+4. Clone the Github repository and open the project folder/directory:
 
   ```bash
   $ git clone https://github.com/Dennis-Maigua/DS-Load-Balancer.git
-  ```
-
-2. Navigate to the cloned project folder or directory:
-
-  ```bash
   $ cd Desktop/DS-Load-Balancer
   ```
 
-3. Run the following commands on the terminal:
+## Testing and Performance
+
+1. **Build and Run:**
 
   ```bash
-  $ python3 -m test
-  $ make test
+  $ make build
+  $ make up
   ```
