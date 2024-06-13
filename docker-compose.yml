@@ -4,6 +4,8 @@ services:
       context: .
       dockerfile: app/Dockerfile
     container_name: load-balancer
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - "5000:5000"
     depends_on:

@@ -11,7 +11,7 @@ def test_endpoints():
     ]
     for url in urls:
         response = requests.get(url)
-        print(f"GET {url} - Status Code: {response.status_code}, Response: {response.json() if response.content else ''}")
+        print(f"GET {url} - Status Code: {response.status_code}, Response: {response.json if response.content else ''}")
 
 def simulate_failure(server_id):
     container = client.containers.get(server_id)

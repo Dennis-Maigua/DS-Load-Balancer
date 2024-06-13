@@ -21,7 +21,7 @@ def add_servers(n):
     url = 'http://localhost:5000/add'
     data = {'n': n}
     response = requests.post(url, json=data)
-    return response.json()
+    return response.json
 
 def measure_load_distribution():
     responses = asyncio.run(send_requests('http://localhost:5000/home'))
@@ -29,26 +29,24 @@ def measure_load_distribution():
     count = Counter(servers)
     return count
 
-def plot_distribution(count, title, filename):
+def plot_distribution(count, title):
     plt.bar(count.keys(), count.values())
     plt.xlabel('Server ID')
     plt.ylabel('Number of Requests')
     plt.title(title)
-    plt.savefig(f'../plots/{filename}')  # Save the plot
     plt.show()
 
 if __name__ == "__main__":  # Adding servers incrementally from 1 to 5
-        for i in range(1, 6):  # Adding servers incrementally from 1 to 5
-            print(f"Adding {i} servers...")
-            
-            try:
-                result = add_servers(1)
-                print(f"Result: {result}")
-            except requests.exceptions.RequestException as e:
-                print(f"Request failed: {e}")
-            except ValueError as e:
-                print(f"JSON decoding failed: {e}")
-        
+    for i in range(1, 6):  # Adding servers incrementally from 1 to 5
+        print(f"Adding {i} servers...")
+
+        try:
+            result = add_servers(1)
+            print(f"Result: {result}")
+        except requests.exceptions.RequestException as e:
+            print(f"Request failed: {e}")
+        except ValueError as e:
+            print(f"JSON decoding failed: {e}")
         time.sleep(10)  # Wait for the server to be fully ready
         count = measure_load_distribution()
-        plot_distribution(count, f'Load Distribution with {i + 1} Servers', f'load_distribution_{i + 1}_servers.png')
+        plot_distribution(count, f'Load Distribution with {i + 1} Servers')
