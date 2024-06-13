@@ -65,7 +65,7 @@ This project implements a customizable load balancer using consistent hashing.
 
 ## Testing and Performance
 
-1. Build and Run docker containers:
+1. Build and Run docker images or containers:
 
   ```bash
   $ make all
