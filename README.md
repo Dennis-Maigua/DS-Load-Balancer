@@ -73,18 +73,20 @@ This project implements a customizable load balancer using consistent hashing.
 
 ![Screenshot from 2024-06-13 13-10-38](https://github.com/Dennis-Maigua/DS-Load-Balancer/assets/32156551/f3d34404-de3b-437f-a8ff-89f4cc05256c)
 
-2. Open a new terminal and install dependencies:
+2. Install python dependencies for allowing http requests and plotting graphs:
 
   ```bash
   $ sudo apt-get install python3-aiohttp python3-matplotlib -y
   ```
 
-3. Run asynchronous requests and plot a load distribution graph of the responses:
+3. Run asynchronous requests and plot a bar graph for the load distribution of the responses:
 
   ```bash
   $ cd analysis/scripts
   $ python3 async_requests.py
   ```
+
+![Figure_1](https://github.com/Dennis-Maigua/DS-Load-Balancer/assets/32156551/87cf4930-f2a4-4415-b3ea-64a022e9184a)
 
 4. Add Servers and Measure Load Distribution:
 
