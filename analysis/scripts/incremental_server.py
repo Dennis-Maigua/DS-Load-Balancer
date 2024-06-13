@@ -37,9 +37,18 @@ def plot_distribution(count, title, filename):
     plt.savefig(f'../plots/{filename}')  # Save the plot
     plt.show()
 
-if __name__ == "__main__":
-    for i in range(1, 6):  # Adding servers incrementally from 1 to 5
-        add_servers(1)
+if __name__ == "__main__":  # Adding servers incrementally from 1 to 5
+        for i in range(1, 6):  # Adding servers incrementally from 1 to 5
+            print(f"Adding {i} servers...")
+            
+            try:
+                result = add_servers(1)
+                print(f"Result: {result}")
+            except requests.exceptions.RequestException as e:
+                print(f"Request failed: {e}")
+            except ValueError as e:
+                print(f"JSON decoding failed: {e}")
+        
         time.sleep(10)  # Wait for the server to be fully ready
         count = measure_load_distribution()
         plot_distribution(count, f'Load Distribution with {i + 1} Servers', f'load_distribution_{i + 1}_servers.png')

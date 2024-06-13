@@ -3,11 +3,9 @@ services:
     build:
       context: .
       dockerfile: app/Dockerfile
-    container_name: ds-load-balancer
+    container_name: load-balancer
     ports:
       - "5000:5000"
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
       - server1
       - server2
@@ -19,7 +17,7 @@ services:
       dockerfile: server/Dockerfile
     environment:
       - SERVER_ID=1
-    container_name: ds-load-balancer-server1
+    container_name: server1
     ports:
       - "5001:5001"
 
@@ -29,7 +27,7 @@ services:
       dockerfile: server/Dockerfile
     environment:
       - SERVER_ID=2
-    container_name: ds-load-balancer-server2
+    container_name: server2
     ports:
       - "5002:5002"
 
@@ -39,6 +37,6 @@ services:
       dockerfile: server/Dockerfile
     environment:
       - SERVER_ID=3
-    container_name: ds-load-balancer-server3
+    container_name: server3
     ports:
       - "5003:5003"
