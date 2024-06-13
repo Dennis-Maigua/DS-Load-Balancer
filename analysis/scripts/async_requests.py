@@ -4,8 +4,11 @@ import matplotlib.pyplot as plt
 from collections import Counter
 
 async def fetch(session, url):
-    async with session.get(url) as response:
-        return await response.text()
+    try:
+        async with session.get(url) as response:
+            return await response.text()
+    except Exception as e:
+        return str(e)
 
 async def main():
     url = 'http://localhost:5000/home'
