@@ -76,7 +76,7 @@ This project implements a customizable load balancer using consistent hashing.
 2. Open a new terminal and install dependencies:
 
   ```bash
-  $ sudo apt install python3-aiohttp python3-matplotlib -y
+  $ sudo apt-get install python3-aiohttp python3-matplotlib -y
   ```
 
 3. Run asynchronous requests and plot a load distribution graph of the responses:
