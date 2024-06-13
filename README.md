@@ -86,4 +86,20 @@ This project implements a customizable load balancer using consistent hashing.
   $ python3 async_requests.py
   ```
 
+4. Add Servers and Measure Load Distribution:
 
+  ```bash
+  $ python3 incremental_servers.py
+  ```
+
+5. Test Endpoints and Observe Failures:
+
+  ```bash
+  $ python3 test_endpoints.py
+  ```
+
+6. Compare Different Hash Functions:
+
+  ```bash
+  $ python3 compare_hash_functions.py
+  ```
