@@ -70,3 +70,14 @@ This project implements a customizable load balancer using consistent hashing.
   ```bash
   $ make all
   ```
+
+![Screenshot from 2024-06-13 13-10-38](https://github.com/Dennis-Maigua/DS-Load-Balancer/assets/32156551/f3d34404-de3b-437f-a8ff-89f4cc05256c)
+
+2. Open a new terminal and run:
+
+  ```bash
+  $ cd analysis/scripts
+  $ python3 async_requests.py
+  ```
+
+
