@@ -65,7 +65,7 @@ This project implements a customizable load balancer using consistent hashing.
 
 ## Testing and Performance
 
-1. **Build and Run:**
+1. Build and Run docker containers:
 
   ```bash
   $ make all
@@ -73,7 +73,13 @@ This project implements a customizable load balancer using consistent hashing.
 
 ![Screenshot from 2024-06-13 13-10-38](https://github.com/Dennis-Maigua/DS-Load-Balancer/assets/32156551/f3d34404-de3b-437f-a8ff-89f4cc05256c)
 
-2. Open a new terminal and run:
+2. Open a new terminal and install dependencies:
+
+  ```bash
+  $ sudo apt install python3-aiohttp python3-matplotlib -y
+  ```
+
+3. Run asynchronous requests and plot a load distribution graph of the responses:
 
   ```bash
   $ cd analysis/scripts
