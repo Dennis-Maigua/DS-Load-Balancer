@@ -98,10 +98,14 @@ This project implements a customizable load balancer using consistent hashing.
 
   ```bash
   $ python3 test_endpoints.py
-  ```
+  ```zz
 
 6. Compare Different Hash Functions:
 
   ```bash
   $ python3 compare_hash_functions.py
   ```
+
+# Contributing:
+
+We welcome contributions from developers, legal experts, and blockchain enthusiasts. Feel free to fork the repository, make improvements, and submit pull requests.
