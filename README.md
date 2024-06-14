@@ -98,7 +98,7 @@ This project implements a customizable load balancer using consistent hashing.
 
   ```bash
   $ python3 test_endpoints.py
-  ```zz
+  ```
 
 6. Compare Different Hash Functions:
 
