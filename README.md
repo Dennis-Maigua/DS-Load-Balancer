@@ -44,8 +44,15 @@ This project implements a customizable load balancer using consistent hashing.
    $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
    $ sudo apt-get update
    ```
+
+3. Clone the repository and open the project folder/directory:
+
+  ```bash
+  $ git clone https://github.com/Dennis-Maigua/DS-Load-Balancer.git
+  $ cd Desktop/DS-Load-Balancer
+  ```
    
-3. Install and configure `git`:
+4. (Optional) Install and configure `git`:
   
    ```bash
    $ sudo apt install git
@@ -55,13 +62,6 @@ This project implements a customizable load balancer using consistent hashing.
    $ git config --global user.email "your-github-email"
    $ git config --list
    ```
-
-4. Clone the repository and open the project folder/directory:
-
-  ```bash
-  $ git clone https://github.com/Dennis-Maigua/DS-Load-Balancer.git
-  $ cd Desktop/DS-Load-Balancer
-  ```
 
 ## Testing and Performance
 
