@@ -8,13 +8,13 @@ This project is licensed under the MIT license.
 
 This project implements a customizable load balancer using consistent hashing.
 
-## Design
+### Design
 
 1. **Server:** Simple Docker server with `/home` and `/heartbeat` endpoints.
 2. **Consistent Hashing:** Python implementation of consistent hashing.
 3. **Load Balancer:** Flask-based load balancer managing server containers.
 
-## Setup
+### Setup
 
 1. Install `python3`, `pip`, and `pytest` libraries:
 
@@ -44,15 +44,8 @@ This project implements a customizable load balancer using consistent hashing.
    $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
    $ sudo apt-get update
    ```
-
-3. Clone the repository and open the project folder/directory:
-
-  ```bash
-  $ git clone https://github.com/Dennis-Maigua/DS-Load-Balancer.git
-  $ cd Desktop/DS-Load-Balancer
-  ```
    
-4. (Optional) Install and configure `git`:
+3. Install and configure `git`:
   
    ```bash
    $ sudo apt install git
@@ -63,11 +56,19 @@ This project implements a customizable load balancer using consistent hashing.
    $ git config --list
    ```
 
-## Testing and Performance
+4. Clone the repository to your local machine:
+
+  ```bash
+  $ cd Desktop
+  $ git clone https://github.com/Dennis-Maigua/DS-Load-Balancer.git
+  ```
+
+### Testing and Performance
 
 1. Build and Run docker images or containers:
 
   ```bash
+  $ cd DS-Load-Balancer
   $ make all
   ```
 
