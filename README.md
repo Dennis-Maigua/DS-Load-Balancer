@@ -56,7 +56,7 @@ This project implements a customizable load balancer using consistent hashing.
    $ git config --list
    ```
 
-4. Clone the repository to your local machine:
+4. Clone or download the repository to your local machine:
 
   ```bash
   $ cd Desktop
