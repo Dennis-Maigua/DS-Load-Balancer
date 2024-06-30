@@ -109,4 +109,4 @@ This project implements a customizable load balancer using consistent hashing.
 
 # Contributing:
 
-We welcome contributions from developers, legal experts, and blockchain enthusiasts. Feel free to fork the repository, make improvements, and submit pull requests.
+We welcome contributions from developers, IT experts, and technology enthusiasts. Feel free to fork the repository, make improvements, and submit pull requests.
