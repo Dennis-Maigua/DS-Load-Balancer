@@ -95,11 +95,15 @@ This project implements a customizable load balancer using consistent hashing.
   $ python3 incremental_servers.py
   ```
 
+![Load Distribution](https://github.com/user-attachments/assets/88b2697c-2c45-483f-a3ef-259db01bfcce)
+
 5. Test Endpoints and Observe Failures:
 
   ```bash
   $ python3 test_endpoints.py
   ```
+
+![Failure](https://github.com/user-attachments/assets/84401364-72d3-4d4c-b356-12d64e6137b0)
 
 6. Compare Different Hash Functions:
 
